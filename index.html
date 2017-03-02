@@ -16,7 +16,7 @@
     <div v-for="boisson in choices">
       <div class="row s-rows">
         <div class="col-lg-2 col-lg-offset-2 col-xs-2 text-right total-lh">
-          {{ boisson.count }} 
+          {{ boisson.count ? boisson.count : '' }} 
         </div>
         <div class="col-lg-3 col-xs-8 text-center">
         <div class="btn-group btn-group-justified" role="group">
